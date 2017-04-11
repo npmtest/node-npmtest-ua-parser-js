@@ -1,1 +1,40 @@
-{     "devDependencies": {         "ua-parser-js": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-ua-parser-js",     "homepage": "https://github.com/npmtest/node-npmtest-ua-parser-js",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-ua-parser-js.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [ua-parser-js (v0.7.12)](http://github.com/faisalman/ua-parser-js) [![npm package](https://img.shields.io/npm/v/npmtest-ua-parser-js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ua-parser-js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ua-parser-js.svg)](https://travis-ci.org/npmtest/node-npmtest-ua-parser-js)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "ua-parser-js": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-ua-parser-js",
+    "keywords": [
+        "coverage",
+        "test",
+        "ua-parser-js"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_ua_parser_js.js",
+    "name": "npmtest-ua-parser-js",
+    "nameAlias": "npmtest_ua_parser_js",
+    "nameOriginal": "npmtest-ua-parser-js",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-ua-parser-js.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
