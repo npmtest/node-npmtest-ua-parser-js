@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-ua-parser-js/ua-parser-js/src/ua-parser.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-ua-parser-js/node_modules/ua-parser-js/src/ua-parser.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-ua-parser-js">npmtest-ua-parser-js (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-ua-parser-js/ua-parser-js/src/ua-parser.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-ua-parser-js/node_modules/ua-parser-js/src/ua-parser.js</span></h1>
     <h2>
         
         Statements: <span class="metric">17.59% <small>(19 / 108)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-ua-parser-js/ua-parser-js/src/</a> » ua-parser.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-ua-parser-js/node_modules/ua-parser-js/src/</a> &#187; ua-parser.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -2090,32 +2092,32 @@
 &nbsp;
 &nbsp;
     var util = {
-        extend : <span class="fstat-no" title="function not covered">function (regexes, extensions) {</span>
-<span class="cstat-no" title="statement not covered">            var margedRegexes = {};</span>
-<span class="cstat-no" title="statement not covered">            for (var i in regexes) {</span>
-<span class="cstat-no" title="statement not covered">                if (extensions[i] &amp;&amp; extensions[i].length % 2 === 0) {</span>
-<span class="cstat-no" title="statement not covered">                    margedRegexes[i] = extensions[i].concat(regexes[i]);</span>
+        extend : <span class="fstat-no" title="function not covered" >function (regexes, extensions) {</span>
+<span class="cstat-no" title="statement not covered" >            var margedRegexes = {};</span>
+<span class="cstat-no" title="statement not covered" >            for (var i in regexes) {</span>
+<span class="cstat-no" title="statement not covered" >                if (extensions[i] &amp;&amp; extensions[i].length % 2 === 0) {</span>
+<span class="cstat-no" title="statement not covered" >                    margedRegexes[i] = extensions[i].concat(regexes[i]);</span>
                 } else {
-<span class="cstat-no" title="statement not covered">                    margedRegexes[i] = regexes[i];</span>
+<span class="cstat-no" title="statement not covered" >                    margedRegexes[i] = regexes[i];</span>
                 }
             }
-<span class="cstat-no" title="statement not covered">            return margedRegexes;</span>
+<span class="cstat-no" title="statement not covered" >            return margedRegexes;</span>
         },
-        has : <span class="fstat-no" title="function not covered">function (str1, str2) {</span>
-<span class="cstat-no" title="statement not covered">          if (typeof str1 === "string") {</span>
-<span class="cstat-no" title="statement not covered">            return str2.toLowerCase().indexOf(str1.toLowerCase()) !== -1;</span>
+        has : <span class="fstat-no" title="function not covered" >function (str1, str2) {</span>
+<span class="cstat-no" title="statement not covered" >          if (typeof str1 === "string") {</span>
+<span class="cstat-no" title="statement not covered" >            return str2.toLowerCase().indexOf(str1.toLowerCase()) !== -1;</span>
           } else {
-<span class="cstat-no" title="statement not covered">            return false;</span>
+<span class="cstat-no" title="statement not covered" >            return false;</span>
           }
         },
-        lowerize : <span class="fstat-no" title="function not covered">function (str) {</span>
-<span class="cstat-no" title="statement not covered">            return str.toLowerCase();</span>
+        lowerize : <span class="fstat-no" title="function not covered" >function (str) {</span>
+<span class="cstat-no" title="statement not covered" >            return str.toLowerCase();</span>
         },
-        major : <span class="fstat-no" title="function not covered">function (version) {</span>
-<span class="cstat-no" title="statement not covered">            return typeof(version) === STR_TYPE ? version.replace(/[^\d\.]/g,'').split(".")[0] : undefined;</span>
+        major : <span class="fstat-no" title="function not covered" >function (version) {</span>
+<span class="cstat-no" title="statement not covered" >            return typeof(version) === STR_TYPE ? version.replace(/[^\d\.]/g,'').split(".")[0] : undefined;</span>
         },
-        trim : <span class="fstat-no" title="function not covered">function (str) {</span>
-<span class="cstat-no" title="statement not covered">          return str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');</span>
+        trim : <span class="fstat-no" title="function not covered" >function (str) {</span>
+<span class="cstat-no" title="statement not covered" >          return str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');</span>
         }
     };
 &nbsp;
@@ -2127,87 +2129,87 @@
 &nbsp;
     var mapper = {
 &nbsp;
-        rgx : <span class="fstat-no" title="function not covered">function () {</span>
+        rgx : <span class="fstat-no" title="function not covered" >function () {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">            var result, i = 0, j, k, p, q, matches, match, args = arguments;</span>
+<span class="cstat-no" title="statement not covered" >            var result, i = 0, j, k, p, q, matches, match, args = arguments;</span>
 &nbsp;
             // loop through all regexes maps
-<span class="cstat-no" title="statement not covered">            while (i &lt; args.length &amp;&amp; !matches) {</span>
+<span class="cstat-no" title="statement not covered" >            while (i &lt; args.length &amp;&amp; !matches) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">                var regex = args[i],       // even sequence (0,2,4,..)</span>
+<span class="cstat-no" title="statement not covered" >                var regex = args[i],       // even sequence (0,2,4,..)</span>
                     props = args[i + 1];   // odd sequence (1,3,5,..)
 &nbsp;
                 // construct object barebones
-<span class="cstat-no" title="statement not covered">                if (typeof result === UNDEF_TYPE) {</span>
-<span class="cstat-no" title="statement not covered">                    result = {};</span>
-<span class="cstat-no" title="statement not covered">                    for (p in props) {</span>
-<span class="cstat-no" title="statement not covered">                        if (props.hasOwnProperty(p)){</span>
-<span class="cstat-no" title="statement not covered">                            q = props[p];</span>
-<span class="cstat-no" title="statement not covered">                            if (typeof q === OBJ_TYPE) {</span>
-<span class="cstat-no" title="statement not covered">                                result[q[0]] = undefined;</span>
+<span class="cstat-no" title="statement not covered" >                if (typeof result === UNDEF_TYPE) {</span>
+<span class="cstat-no" title="statement not covered" >                    result = {};</span>
+<span class="cstat-no" title="statement not covered" >                    for (p in props) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (props.hasOwnProperty(p)){</span>
+<span class="cstat-no" title="statement not covered" >                            q = props[p];</span>
+<span class="cstat-no" title="statement not covered" >                            if (typeof q === OBJ_TYPE) {</span>
+<span class="cstat-no" title="statement not covered" >                                result[q[0]] = undefined;</span>
                             } else {
-<span class="cstat-no" title="statement not covered">                                result[q] = undefined;</span>
+<span class="cstat-no" title="statement not covered" >                                result[q] = undefined;</span>
                             }
                         }
                     }
                 }
 &nbsp;
                 // try matching uastring with regexes
-<span class="cstat-no" title="statement not covered">                j = k = 0;</span>
-<span class="cstat-no" title="statement not covered">                while (j &lt; regex.length &amp;&amp; !matches) {</span>
-<span class="cstat-no" title="statement not covered">                    matches = regex[j++].exec(this.getUA());</span>
-<span class="cstat-no" title="statement not covered">                    if (!!matches) {</span>
-<span class="cstat-no" title="statement not covered">                        for (p = 0; p &lt; props.length; p++) {</span>
-<span class="cstat-no" title="statement not covered">                            match = matches[++k];</span>
-<span class="cstat-no" title="statement not covered">                            q = props[p];</span>
+<span class="cstat-no" title="statement not covered" >                j = k = 0;</span>
+<span class="cstat-no" title="statement not covered" >                while (j &lt; regex.length &amp;&amp; !matches) {</span>
+<span class="cstat-no" title="statement not covered" >                    matches = regex[j++].exec(this.getUA());</span>
+<span class="cstat-no" title="statement not covered" >                    if (!!matches) {</span>
+<span class="cstat-no" title="statement not covered" >                        for (p = 0; p &lt; props.length; p++) {</span>
+<span class="cstat-no" title="statement not covered" >                            match = matches[++k];</span>
+<span class="cstat-no" title="statement not covered" >                            q = props[p];</span>
                             // check if given property is actually array
-<span class="cstat-no" title="statement not covered">                            if (typeof q === OBJ_TYPE &amp;&amp; q.length &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered">                                if (q.length == 2) {</span>
-<span class="cstat-no" title="statement not covered">                                    if (typeof q[1] == FUNC_TYPE) {</span>
+<span class="cstat-no" title="statement not covered" >                            if (typeof q === OBJ_TYPE &amp;&amp; q.length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >                                if (q.length == 2) {</span>
+<span class="cstat-no" title="statement not covered" >                                    if (typeof q[1] == FUNC_TYPE) {</span>
                                         // assign modified match
-<span class="cstat-no" title="statement not covered">                                        result[q[0]] = q[1].call(this, match);</span>
+<span class="cstat-no" title="statement not covered" >                                        result[q[0]] = q[1].call(this, match);</span>
                                     } else {
                                         // assign given value, ignore regex match
-<span class="cstat-no" title="statement not covered">                                        result[q[0]] = q[1];</span>
+<span class="cstat-no" title="statement not covered" >                                        result[q[0]] = q[1];</span>
                                     }
-                                } else <span class="cstat-no" title="statement not covered">if (q.length == 3) {</span>
+                                } else <span class="cstat-no" title="statement not covered" >if (q.length == 3) {</span>
                                     // check whether function or regex
-<span class="cstat-no" title="statement not covered">                                    if (typeof q[1] === FUNC_TYPE &amp;&amp; !(q[1].exec &amp;&amp; q[1].test)) {</span>
+<span class="cstat-no" title="statement not covered" >                                    if (typeof q[1] === FUNC_TYPE &amp;&amp; !(q[1].exec &amp;&amp; q[1].test)) {</span>
                                         // call function (usually string mapper)
-<span class="cstat-no" title="statement not covered">                                        result[q[0]] = match ? q[1].call(this, match, q[2]) : undefined;</span>
+<span class="cstat-no" title="statement not covered" >                                        result[q[0]] = match ? q[1].call(this, match, q[2]) : undefined;</span>
                                     } else {
                                         // sanitize match using given regex
-<span class="cstat-no" title="statement not covered">                                        result[q[0]] = match ? match.replace(q[1], q[2]) : undefined;</span>
+<span class="cstat-no" title="statement not covered" >                                        result[q[0]] = match ? match.replace(q[1], q[2]) : undefined;</span>
                                     }
-                                } else <span class="cstat-no" title="statement not covered">if (q.length == 4) {</span>
-<span class="cstat-no" title="statement not covered">                                        result[q[0]] = match ? q[3].call(this, match.replace(q[1], q[2])) : undefined;</span>
+                                } else <span class="cstat-no" title="statement not covered" >if (q.length == 4) {</span>
+<span class="cstat-no" title="statement not covered" >                                        result[q[0]] = match ? q[3].call(this, match.replace(q[1], q[2])) : undefined;</span>
                                 }
                             } else {
-<span class="cstat-no" title="statement not covered">                                result[q] = match ? match : undefined;</span>
+<span class="cstat-no" title="statement not covered" >                                result[q] = match ? match : undefined;</span>
                             }
                         }
                     }
                 }
-<span class="cstat-no" title="statement not covered">                i += 2;</span>
+<span class="cstat-no" title="statement not covered" >                i += 2;</span>
             }
-<span class="cstat-no" title="statement not covered">            return result;</span>
+<span class="cstat-no" title="statement not covered" >            return result;</span>
         },
 &nbsp;
-        str : <span class="fstat-no" title="function not covered">function (str, map) {</span>
+        str : <span class="fstat-no" title="function not covered" >function (str, map) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">            for (var i in map) {</span>
+<span class="cstat-no" title="statement not covered" >            for (var i in map) {</span>
                 // check if array
-<span class="cstat-no" title="statement not covered">                if (typeof map[i] === OBJ_TYPE &amp;&amp; map[i].length &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered">                    for (var j = 0; j &lt; map[i].length; j++) {</span>
-<span class="cstat-no" title="statement not covered">                        if (util.has(map[i][j], str)) {</span>
-<span class="cstat-no" title="statement not covered">                            return (i === UNKNOWN) ? undefined : i;</span>
+<span class="cstat-no" title="statement not covered" >                if (typeof map[i] === OBJ_TYPE &amp;&amp; map[i].length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >                    for (var j = 0; j &lt; map[i].length; j++) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (util.has(map[i][j], str)) {</span>
+<span class="cstat-no" title="statement not covered" >                            return (i === UNKNOWN) ? undefined : i;</span>
                         }
                     }
-                } else <span class="cstat-no" title="statement not covered">if (util.has(map[i], str)) {</span>
-<span class="cstat-no" title="statement not covered">                    return (i === UNKNOWN) ? undefined : i;</span>
+                } else <span class="cstat-no" title="statement not covered" >if (util.has(map[i], str)) {</span>
+<span class="cstat-no" title="statement not covered" >                    return (i === UNKNOWN) ? undefined : i;</span>
                 }
             }
-<span class="cstat-no" title="statement not covered">            return str;</span>
+<span class="cstat-no" title="statement not covered" >            return str;</span>
         }
     };
 &nbsp;
@@ -2837,34 +2839,34 @@
     ////////////////
 &nbsp;
 &nbsp;
-    var UAParser = <span class="fstat-no" title="function not covered">function (uastring, extensions) {</span>
+    var UAParser = <span class="fstat-no" title="function not covered" >function (uastring, extensions) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        if (!(this instanceof UAParser)) {</span>
-<span class="cstat-no" title="statement not covered">            return new UAParser(uastring, extensions).getResult();</span>
+<span class="cstat-no" title="statement not covered" >        if (!(this instanceof UAParser)) {</span>
+<span class="cstat-no" title="statement not covered" >            return new UAParser(uastring, extensions).getResult();</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered">        var ua = uastring || ((window &amp;&amp; window.navigator &amp;&amp; window.navigator.userAgent) ? window.navigator.userAgent : EMPTY);</span>
-<span class="cstat-no" title="statement not covered">        var rgxmap = extensions ? util.extend(regexes, extensions) : regexes;</span>
+<span class="cstat-no" title="statement not covered" >        var ua = uastring || ((window &amp;&amp; window.navigator &amp;&amp; window.navigator.userAgent) ? window.navigator.userAgent : EMPTY);</span>
+<span class="cstat-no" title="statement not covered" >        var rgxmap = extensions ? util.extend(regexes, extensions) : regexes;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">        this.getBrowser = <span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">            var browser = mapper.rgx.apply(this, rgxmap.browser);</span>
-<span class="cstat-no" title="statement not covered">            browser.major = util.major(browser.version);</span>
-<span class="cstat-no" title="statement not covered">            return browser;</span>
+<span class="cstat-no" title="statement not covered" >        this.getBrowser = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            var browser = mapper.rgx.apply(this, rgxmap.browser);</span>
+<span class="cstat-no" title="statement not covered" >            browser.major = util.major(browser.version);</span>
+<span class="cstat-no" title="statement not covered" >            return browser;</span>
         };
-<span class="cstat-no" title="statement not covered">        this.getCPU = <span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">            return mapper.rgx.apply(this, rgxmap.cpu);</span>
+<span class="cstat-no" title="statement not covered" >        this.getCPU = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            return mapper.rgx.apply(this, rgxmap.cpu);</span>
         };
-<span class="cstat-no" title="statement not covered">        this.getDevice = <span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">            return mapper.rgx.apply(this, rgxmap.device);</span>
+<span class="cstat-no" title="statement not covered" >        this.getDevice = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            return mapper.rgx.apply(this, rgxmap.device);</span>
         };
-<span class="cstat-no" title="statement not covered">        this.getEngine = <span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">            return mapper.rgx.apply(this, rgxmap.engine);</span>
+<span class="cstat-no" title="statement not covered" >        this.getEngine = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            return mapper.rgx.apply(this, rgxmap.engine);</span>
         };
-<span class="cstat-no" title="statement not covered">        this.getOS = <span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">            return mapper.rgx.apply(this, rgxmap.os);</span>
+<span class="cstat-no" title="statement not covered" >        this.getOS = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            return mapper.rgx.apply(this, rgxmap.os);</span>
         };
-<span class="cstat-no" title="statement not covered">        this.getResult = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">            return {</span>
+<span class="cstat-no" title="statement not covered" >        this.getResult = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            return {</span>
                 ua      : this.getUA(),
                 browser : this.getBrowser(),
                 engine  : this.getEngine(),
@@ -2873,14 +2875,14 @@
                 cpu     : this.getCPU()
             };
         };
-<span class="cstat-no" title="statement not covered">        this.getUA = <span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">            return ua;</span>
+<span class="cstat-no" title="statement not covered" >        this.getUA = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            return ua;</span>
         };
-<span class="cstat-no" title="statement not covered">        this.setUA = <span class="fstat-no" title="function not covered">function (uastring) {</span></span>
-<span class="cstat-no" title="statement not covered">            ua = uastring;</span>
-<span class="cstat-no" title="statement not covered">            return this;</span>
+<span class="cstat-no" title="statement not covered" >        this.setUA = <span class="fstat-no" title="function not covered" >function (uastring) {</span></span>
+<span class="cstat-no" title="statement not covered" >            ua = uastring;</span>
+<span class="cstat-no" title="statement not covered" >            return this;</span>
         };
-<span class="cstat-no" title="statement not covered">        return this;</span>
+<span class="cstat-no" title="statement not covered" >        return this;</span>
     };
 &nbsp;
     UAParser.VERSION = LIBVERSION;
@@ -2919,21 +2921,21 @@
 &nbsp;
 &nbsp;
     // check js environment
-    <span class="missing-if-branch" title="else path not taken">E</span>if (typeof(exports) !== UNDEF_TYPE) {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof(exports) !== UNDEF_TYPE) {
         // nodejs env
-        <span class="missing-if-branch" title="else path not taken">E</span>if (typeof module !== UNDEF_TYPE &amp;&amp; module.exports) {
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof module !== UNDEF_TYPE &amp;&amp; module.exports) {
             exports = module.exports = UAParser;
         }
         exports.UAParser = UAParser;
     } else {
         // requirejs env (optional)
-<span class="cstat-no" title="statement not covered">        if (typeof(define) === FUNC_TYPE &amp;&amp; define.amd) {</span>
-<span class="cstat-no" title="statement not covered">            define(<span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">                return UAParser;</span>
+<span class="cstat-no" title="statement not covered" >        if (typeof(define) === FUNC_TYPE &amp;&amp; define.amd) {</span>
+<span class="cstat-no" title="statement not covered" >            define(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >                return UAParser;</span>
             });
         } else {
             // browser env
-<span class="cstat-no" title="statement not covered">            window.UAParser = UAParser;</span>
+<span class="cstat-no" title="statement not covered" >            window.UAParser = UAParser;</span>
         }
     }
 &nbsp;
@@ -2943,29 +2945,28 @@
     //   jQuery always exports to global scope, unless jQuery.noConflict(true) is used,
     //   and we should catch that.
     var $ = window.jQuery || window.Zepto;
-    <span class="missing-if-branch" title="if path not taken">I</span>if (typeof $ !== UNDEF_TYPE) {
-<span class="cstat-no" title="statement not covered">        var parser = new UAParser();</span>
-<span class="cstat-no" title="statement not covered">        $.ua = parser.getResult();</span>
-<span class="cstat-no" title="statement not covered">        $.ua.get = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">            return parser.getUA();</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof $ !== UNDEF_TYPE) {
+<span class="cstat-no" title="statement not covered" >        var parser = new UAParser();</span>
+<span class="cstat-no" title="statement not covered" >        $.ua = parser.getResult();</span>
+<span class="cstat-no" title="statement not covered" >        $.ua.get = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            return parser.getUA();</span>
         };
-<span class="cstat-no" title="statement not covered">        $.ua.set = <span class="fstat-no" title="function not covered">function (uastring) {</span></span>
-<span class="cstat-no" title="statement not covered">            parser.setUA(uastring);</span>
-<span class="cstat-no" title="statement not covered">            var result = parser.getResult();</span>
-<span class="cstat-no" title="statement not covered">            for (var prop in result) {</span>
-<span class="cstat-no" title="statement not covered">                $.ua[prop] = result[prop];</span>
+<span class="cstat-no" title="statement not covered" >        $.ua.set = <span class="fstat-no" title="function not covered" >function (uastring) {</span></span>
+<span class="cstat-no" title="statement not covered" >            parser.setUA(uastring);</span>
+<span class="cstat-no" title="statement not covered" >            var result = parser.getResult();</span>
+<span class="cstat-no" title="statement not covered" >            for (var prop in result) {</span>
+<span class="cstat-no" title="statement not covered" >                $.ua[prop] = result[prop];</span>
             }
         };
     }
 &nbsp;
-})(typeof window === 'object' ? <span class="branch-0 cbranch-no" title="branch not covered">window </span>: this);
+})(typeof window === 'object' ? <span class="branch-0 cbranch-no" title="branch not covered" >window </span>: this);
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 15:56:32 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 20:47:17 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
