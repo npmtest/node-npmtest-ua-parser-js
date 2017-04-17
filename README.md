@@ -1,7 +1,7 @@
 # test coverage for  [ua-parser-js (v0.7.12)](http://github.com/faisalman/ua-parser-js)  [![npm package](https://img.shields.io/npm/v/npmtest-ua-parser-js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ua-parser-js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ua-parser-js.svg)](https://travis-ci.org/npmtest/node-npmtest-ua-parser-js)
 #### Lightweight JavaScript-based user-agent string parser
 
-[![NPM](https://nodei.co/npm/ua-parser-js.png?downloads=true)](https://www.npmjs.com/package/ua-parser-js)
+[![NPM](https://nodei.co/npm/ua-parser-js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ua-parser-js)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-ua-parser-js/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-ua-parser-js/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-ua-parser-js/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ua-parser-js/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ua-parser-js/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-ua-parser-js/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-ua-parser-js/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-ua-parser-js/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-ua-parser-js/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-ua-parser-js/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-ua-parser-js%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-ua-parser-js/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-ua-parser-js/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-ua-parser-js/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-ua-parser-js/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-ua-parser-js%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-ua-parser-js/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-ua-parser-js/build/test-report.html](https://npmtest.github.io/node-npmtest-ua-parser-js/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-ua-parser-js/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-ua-parser-js/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-ua-parser-js/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-ua-parser-js/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-ua-parser-js/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-ua-parser-js/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-ua-parser-js/build/screenCapture.npmPackageListing.svg)
 
@@ -28,7 +34,6 @@
 {
     "author": {
         "name": "Faisal Salman",
-        "email": "fyzlman@gmail.com",
         "url": "http://faisalman.com"
     },
     "bugs": {
@@ -36,100 +41,76 @@
     },
     "contributors": [
         {
-            "name": "Faisal Salman",
-            "email": "fyzlman@gmail.com"
+            "name": "Faisal Salman"
         },
         {
-            "name": "Benjamin Bertrand",
-            "email": "bertrand.design@gmail.com"
+            "name": "Benjamin Bertrand"
         },
         {
-            "name": "Carl C Von Lewin",
-            "email": "carlchristianlewin@gmail.com"
+            "name": "Carl C Von Lewin"
         },
         {
-            "name": "Christopher De Cairos",
-            "email": "chris.decairos@gmail.com"
+            "name": "Christopher De Cairos"
         },
         {
-            "name": "Davit Barbakadze",
-            "email": "jayarjo@gmail.com"
+            "name": "Davit Barbakadze"
         },
         {
-            "name": "Dmitry Tyschenko",
-            "email": "dtyschenko@gmail.com"
+            "name": "Dmitry Tyschenko"
         },
         {
-            "name": "Douglas Li",
-            "email": "doug@knotch.it"
+            "name": "Douglas Li"
         },
         {
-            "name": "Dumitru Uzun",
-            "email": "contact@duzun.me"
+            "name": "Dumitru Uzun"
         },
         {
-            "name": "Erik Hesselink",
-            "email": "hesselink@gmail.com"
+            "name": "Erik Hesselink"
         },
         {
-            "name": "Fabian Becker",
-            "email": "halfdan@xnorfz.de"
+            "name": "Fabian Becker"
         },
         {
-            "name": "Hendrik Helwich",
-            "email": "h.helwich@iplabs.de"
+            "name": "Hendrik Helwich"
         },
         {
-            "name": "Jackpoll",
-            "email": "jackpoll123456@gmail.com"
+            "name": "Jackpoll"
         },
         {
-            "name": "Jake Mc",
-            "email": "startswithaj@users.noreply.github.com"
+            "name": "Jake Mc"
         },
         {
-            "name": "John Tantalo",
-            "email": "john.tantalo@gmail.com"
+            "name": "John Tantalo"
         },
         {
-            "name": "John Yanarella",
-            "email": "jmy@codecatalyst.com"
+            "name": "John Yanarella"
         },
         {
-            "name": "Jon Buckley",
-            "email": "jon@jbuckley.ca"
+            "name": "Jon Buckley"
         },
         {
-            "name": "Kendall Buchanan",
-            "email": "kendall@kendagriff.com"
+            "name": "Kendall Buchanan"
         },
         {
-            "name": "Lee Treveil",
-            "email": "leetreveil@gmail.com"
+            "name": "Lee Treveil"
         },
         {
-            "name": "Leonardo",
-            "email": "leofiore@libero.it"
+            "name": "Leonardo"
         },
         {
-            "name": "Max Maurer",
-            "email": "maxemanuel.maurer@gmail.com"
+            "name": "Max Maurer"
         },
         {
-            "name": "Michael Hess",
-            "email": "mhess@connectify.me"
+            "name": "Michael Hess"
         },
         {
-            "name": "OtakuSiD",
-            "email": "otakusid@gmail.com"
+            "name": "OtakuSiD"
         },
         {
-            "name": "Ross Noble",
-            "email": "rosshnoble@gmail.com"
+            "name": "Ross Noble"
         },
         {
-            "name": "Sandro Sonntag",
-            "email": "sandro.sonntag@adorsys.de"
+            "name": "Sandro Sonntag"
         }
     ],
     "dependencies": {},
@@ -168,13 +149,11 @@
     "main": "src/ua-parser.js",
     "maintainers": [
         {
-            "name": "faisalman",
-            "email": "fyzlman@gmail.com"
+            "name": "faisalman"
         }
     ],
     "name": "ua-parser-js",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/faisalman/ua-parser-js.git"
