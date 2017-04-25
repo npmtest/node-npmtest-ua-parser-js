@@ -1,4 +1,7 @@
-# test coverage for  [ua-parser-js (v0.7.12)](http://github.com/faisalman/ua-parser-js)  [![npm package](https://img.shields.io/npm/v/npmtest-ua-parser-js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ua-parser-js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ua-parser-js.svg)](https://travis-ci.org/npmtest/node-npmtest-ua-parser-js)
+# npmtest-ua-parser-js
+
+#### basic test coverage for  [ua-parser-js (v0.7.12)](http://github.com/faisalman/ua-parser-js)  [![npm package](https://img.shields.io/npm/v/npmtest-ua-parser-js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ua-parser-js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ua-parser-js.svg)](https://travis-ci.org/npmtest/node-npmtest-ua-parser-js)
+
 #### Lightweight JavaScript-based user-agent string parser
 
 [![NPM](https://nodei.co/npm/ua-parser-js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ua-parser-js)
@@ -7,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-ua-parser-js/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-ua-parser-js/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-ua-parser-js/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-ua-parser-js/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ua-parser-js/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ua-parser-js/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-ua-parser-js/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-ua-parser-js/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ua-parser-js/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ua-parser-js/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-ua-parser-js/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-ua-parser-js/build/coverage.html/index.html)
 
@@ -178,7 +181,8 @@
             "^((?:\\$|(\\s*\\*\\s*@)|(\\s*(?:var|,)?\\s+))(?:LIBVERSION|version)[\\s\\:='\"]+)([0-9]+(?:\\.[0-9]+){2,2})",
             "^(\\s?\\*.*v)([0-9]+(?:\\.[0-9]+){2,2})"
         ]
-    }
+    },
+    "bin": {}
 }
 ```
 

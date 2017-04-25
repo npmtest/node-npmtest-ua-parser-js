@@ -1,6 +1,6 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "test coverage for [ua-parser-js (v0.7.12)](http://github.com/faisalman/ua-parser-js) [![npm package](https://img.shields.io/npm/v/npmtest-ua-parser-js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ua-parser-js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ua-parser-js.svg)](https://travis-ci.org/npmtest/node-npmtest-ua-parser-js)",
+    "description": "#### basic test coverage for  [ua-parser-js (v0.7.12)](http://github.com/faisalman/ua-parser-js)  [![npm package](https://img.shields.io/npm/v/npmtest-ua-parser-js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ua-parser-js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ua-parser-js.svg)](https://travis-ci.org/npmtest/node-npmtest-ua-parser-js)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "ua-parser-js": "*",
